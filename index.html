@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sc.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+            $('.sec_1_con>li:nth-child(1)').mouseenter(function(){
+                $(this).css({
+                    border:'0.5px solid #0032A0',
+                    boxShadow: 'inset 0px 0px 10px #0033a06e'
+                });
+                $('.sec_1_con>li:nth-child(1) p').css({
+                    color:'#0032A0'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(1)').mouseleave(function(){
+                $(this).css({
+                    border:'0.5px solid #aaaaaa73',
+                    boxShadow: 'none'
+                });
+                $('.sec_1_con>li:nth-child(1) p').css({
+                    color:'#4d4d4d'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(2)').mouseenter(function(){
+                $(this).css({
+                    border:'0.5px solid #0032A0',
+                    boxShadow: 'inset 0px 0px 10px #0033a06e'
+                });
+                $('.sec_1_con>li:nth-child(2) p').css({
+                    color:'#0032A0'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(2)').mouseleave(function(){
+                $(this).css({
+                    border:'0.5px solid #aaaaaa73',
+                    boxShadow: 'none'
+                });
+                $('.sec_1_con>li:nth-child(2) p').css({
+                    color:'#4d4d4d'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(3)').mouseenter(function(){
+                $(this).css({
+                    border:'0.5px solid #0032A0',
+                    boxShadow: 'inset 0px 0px 10px #0033a06e'
+                });
+                $('.sec_1_con>li:nth-child(3) p').css({
+                    color:'#0032A0'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(3)').mouseleave(function(){
+                $(this).css({
+                    border:'0.5px solid #aaaaaa73',
+                    boxShadow: 'none'
+                });
+                $('.sec_1_con>li:nth-child(3) p').css({
+                    color:'#4d4d4d'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(4)').mouseenter(function(){
+                $(this).css({
+                    border:'0.5px solid #0032A0',
+                    boxShadow: 'inset 0px 0px 10px #0033a06e'
+                });
+                $('.sec_1_con>li:nth-child(4) p').css({
+                    color:'#0032A0'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(4)').mouseleave(function(){
+                $(this).css({
+                    border:'0.5px solid #aaaaaa73',
+                    boxShadow: 'none'
+                });
+                $('.sec_1_con>li:nth-child(4) p').css({
+                    color:'#4d4d4d'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(5)').mouseenter(function(){
+                $(this).css({
+                    border:'0.5px solid #0032A0',
+                    boxShadow: 'inset 0px 0px 10px #0033a06e'
+                });
+                $('.sec_1_con>li:nth-child(5) p').css({
+                    color:'#0032A0'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(5)').mouseleave(function(){
+                $(this).css({
+                    border:'0.5px solid #aaaaaa73',
+                    boxShadow: 'none'
+                });
+                $('.sec_1_con>li:nth-child(5) p').css({
+                    color:'#4d4d4d'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(6)').mouseenter(function(){
+                $(this).css({
+                    border:'0.5px solid #0032A0',
+                    boxShadow: 'inset 0px 0px 10px #0033a06e'
+                });
+                $('.sec_1_con>li:nth-child(6) p').css({
+                    color:'#0032A0'
+                });
+            });
+
+            $('.sec_1_con>li:nth-child(6)').mouseleave(function(){
+                $(this).css({
+                    border:'0.5px solid #aaaaaa73',
+                    boxShadow: 'none'
+                });
+                $('.sec_1_con>li:nth-child(6) p').css({
+                    color:'#4d4d4d'
+                });
+            });
+
+            $('.sec_2_btn>a').mouseenter(function(){
+                $('.sec_2_btn_con').animate({
+                    left:0
+                });
+            });
+
+            $('.sec_2_btn>a').mouseleave(function(){
+                $('.sec_2_btn_con').animate({
+                    left:-200
+                });
+            });
+
+            $(window).scroll(function(){
+                var sct = $(window).scrollTop();
+                var winwid = $(window).width();
+                // console.log(winwid);
+                console.log(sct);
+                if(sct >= 3800){
+                    $('.sec_5_img_wrap').addClass('sec_5_active');
+                }else if(sct>= 3500 && winwid <= 1060){
+                    $('.sec_5_img_wrap').addClass('sec_5_active');
+                }else if(sct>= 3100 && winwid <= 820){
+                    $('.sec_5_img_wrap').addClass('sec_5_active');
+                }else{
+                    $('.sec_5_img_wrap').removeClass('sec_5_active');
+                }
+
+                if(sct >= 1060 && winwid >= 1600){
+                    $('.sec_2_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_2_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 1000 && winwid <= 500){
+                    $('.sec_2_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_2_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 1150 && winwid <= 820){
+                    $('.sec_2_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_2_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 1400 && winwid <= 1300){
+                    $('.sec_2_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_2_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 1550 && winwid <= 1600){
+                    $('.sec_2_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_2_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else{
+                    $('.sec_2_title>h2').removeClass('sec_2_title_active_1');
+                    $('.sec_2_title>p').removeClass('sec_2_title_active_1');
+                    $('.sec_2 .btn').removeClass('sec_2_title_active_1');
+                }
+
+                if(sct >= 2850 && winwid >= 1600){
+                    $('.sec_4_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_4_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 3300 && winwid <= 1600){
+                    $('.sec_4_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_4_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 3000 && winwid <= 1300){
+                    $('.sec_4_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_4_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 2700 && winwid <= 1060){
+                    $('.sec_4_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_4_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else if(sct >= 2400 && winwid <= 820){
+                    $('.sec_4_title>h2').addClass('sec_2_title_active_1');
+                    $('.sec_4_title>p').addClass('sec_2_title_active_1');
+                    $('.btn').addClass('sec_2_title_active_1');
+                }else{
+                    $('.sec_4_title>h2').removeClass('sec_2_title_active_1');
+                    $('.sec_4_title>p').removeClass('sec_2_title_active_1');
+                    $('.sec_4 .btn').removeClass('sec_2_title_active_1');
+                }
+
+                
+            });
+            
+            
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="wrap">
+        
+        <header>
+            <div class="logo_wrap"><a href="#">
+                <img src="img/nivea_logo_clr.png" alt="logo">
+            </a></div>
+            <ul class="gnb">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Advice</a></li>
+                <li><a href="#">Brand & Company</a></li>
+                <li><a href="#">SNS</a></li>
+            </ul>
+            <div class="header_icon_wrap">
+                <div class="ham_btn"><img src="img/ham.png" alt="ham" class="ham"></div>
+                <a href="#"><img src="img/menu_search.png" alt="search"></a>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <main>
+            <div class="main_img">
+                <div class="main_1920"></div>
+            </div>
+            <div class="main_title title">
+                <h2>
+                    우리의 세상을<br>
+                    우리의 피부처럼
+                </h2>
+                <p>
+                    사람의 터치가 가지는 긍정적인 힘을 믿습니다.
+                </p>
+            </div>
+        </main>
+        <!-- main end -->
+
+        <section class="sec_1">
+            <div class="sec_1_title title">
+                <h2>Products</h2>
+                <p>니베아의 다양한 제품에서<br> 영감을 받으세요.</p>
+            </div>
+            <ul class="sec_1_con">
+                <li><a href="#">
+                    <img src="img/bodycare.png" alt="bodycare">
+                    <p>바디케어</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="img/deo.png" alt="deo">
+                    <p>데오드란트</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="img/handcare.png" alt="handcare">
+                    <p>핸드케어</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="img/lipcare.png" alt="lipcare">
+                    <p>립케어</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="img/shaving.png" alt="shaving">
+                    <p>쉐이빙</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="img/suncare.png" alt="suncare">
+                    <p>선케어</p>
+                </a></li>
+            </ul>
+        </section>
+
+        <section class="sec_2">
+            <div class="sec_2_img"></div>
+            <div class="sec_2_title title">
+                <h2>아름다운 피부를 위한 모든 것</h2>
+                <p class="sec_2_title_1">어떤 타입의 피부를 <br>가지고 계신가요?</p>
+                <p class="sec_2_title_2">어떤 타입의 피부를 <br>가지고 계신가요?</p>
+                <div class="sec_2_btn btn"><a href="#">더 알아보기</a>
+                <div class="sec_2_btn_con"></div></div>
+            </div>
+        </section>
+
+        <section class="sec_3">
+            <div class="sec_3_title title">
+                <h2>Life Style</h2>
+                <p>건강하고 행복함을 유지하게 <br>하는 유익한 정보</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="#">
+                    <img src="img/sec_3_img_1.jpg" alt="">
+                    <h3>샤워로 활력찾기</h2>
+                    <p>아침을 내 것으로 만들기</p>
+                </a></div>
+
+                  <div class="swiper-slide"><a href="#">
+                    <img src="img/sec_3_img_2.jpg" alt="">
+                    <h3>다양한 상황의 제모</h3>
+                    <p>피부를 실크처럼 매끈하게</p>
+                </a></div>
+
+                  <div class="swiper-slide"><a href="#">
+                    <img src="img/sec_3_img_3.jpg" alt="">
+                    <h3>Q10 라인의 효과</h3>
+                    <p>나이가 들면 피부도 달라집니다.</p>
+                </a></div>
+
+                  <div class="swiper-slide"><a href="#">
+                    <img src="img/sec_3_img_4.jpg" alt="">
+                    <h3>다양한 데오드란트 타입</h3>
+                    <p>나에게 잘 맞는 제품 찾기</p>
+                </a></div>
+
+                  <div class="swiper-slide"><a href="#">
+                    <img src="img/sec_3_img_5.jpg" alt="">
+                    <h3>맞춤 케어</h3>
+                    <p>어떤 타입의 피부를 가지고 계신가요?</p>
+                </a></div>
+
+                <div class="swiper-slide"><a href="#">
+                    <img src="img/sec_3_img_6.jpg" alt="">
+                    <h3>십대를 위한 스킨 케어</h3>
+                    <p>어린 피부에 맞는 케어 방법</p>
+                </a></div>
+
+                <div class="swiper-slide"><a href="#">
+                    <img src="img/sec_3_img_7.jpg" alt="">
+                    <h3>허벅지 셀룰라이트</h3>
+                    <p>간단한 팁과 조언</p>
+                </a></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+        </section>
+        
+        <section class="sec_4">
+            <div class="sec_4_img"></div>
+            <div class="sec_4_title title">
+                <h2>니베아의<br> 지속가능성</h2>
+                <p>니베아가 환경을 대하는 법</p>
+                <div class="sec_2_btn btn"><a href="#">더 알아보기</a>
+                <div class="sec_2_btn_con"></div></div>
+            </div>
+        </section>
+
+        <section class="sec_5">
+            <div class="sec_5_title title">
+                    <h2><span>Instagram</span>에서 <br>니베아를 만나보세요</h2>
+                
+            </div>
+            <div class="sec_5_img_wrap">
+                <ul class="sec_5_img_left sec_5_img">
+                    <li><a href="#"><img src="img/insta_1.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="img/insta_2.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="img/insta_3.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="img/insta_4.png" alt="insta"></a></li>
+                </ul>
+                <ul class="sec_5_img_right sec_5_img">
+                    <li><a href="#"><img src="img/insta_5.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="img/insta_6.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="img/insta_7.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="img/insta_8.png" alt="insta"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div class="fot_left">
+                <div class="fot_logo"><a href="#">
+                    <h2>Beiersdorf</h2>
+                </a></div>
+                <div class="fot_copy_wrap">
+                    <div class="fot_copy_per fot_copy">
+                        <a href="#"><p>개인정보처리방침</p></a>
+                        <a href="#"><p>법적고지</p></a>
+                    </div>
+                    <ul class="fot_copy_con fot_copy">
+                        <li><a href="#"><p>서울시 영등포구 국제금융로 10, Two IFC 17층</p></a></li>
+                        <li><a href="#"><p>Tel: +82 2 6742 0800</p></a></li>
+                        <li><a href="#"><p>Fax: +82 2 6273 8678</p></a></li>
+                        <li><a href="#"><p>저작권 © 바이어스도르프 2024</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fot_right">
+                <a href="#"><img src="img/instagtam.png" alt="insta"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            </div>
+            
+        </footer>
+    </div>
+
+
+</body>
+</html>
